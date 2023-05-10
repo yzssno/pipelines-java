@@ -12,11 +12,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: UseJavaVersion@1
-  inputs:
-    version: '11'
-    addToPath: true
-
 - script: mvn clean install
   displayName: 'Build and Test'
 
